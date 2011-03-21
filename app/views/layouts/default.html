@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>Coming Soon</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">
+
+body{
+   background: #272320 url(images/background.jpg) no-repeat top center;
+      }
+
+.awesome_wrapper,
+.footer{
+   width: 740px;
+}
+
+.clear
+{
+	clear: both;
+}
+
+#downloadForm
+{
+	float: left;
+}
+
+#imgBox
+{
+	float: right;
+	text-align: center;
+	margin-right: 40px;
+}
+
+
+#samplePic
+{
+	display: block;
+}
+
+#contactInfo
+{
+	width: 170px;
+	font-size: 11px;
+	line-height: 125%;
+	margin-top: 10px;
+}
+
+</style>
+
+
+</head>
+<body class="home">
+
+   <div id="wrapper">
+
+      <div id="content">
+
+
+         <div class="awesome_wrapper">
+
+
+            <div class="awesome">
+
+               <h1>Please enter your information below to download your child's picture.</h1>
+
+               <img src="images/divider.jpg" alt="" class="divider" />
+
+               <form id="downloadForm" action="<%= #placeholder %>" method="post" target="popupwindow">
+
+                  <label for="email">*Enter the code on your printout:</label>
+                  <p><input type="text" name="email"/></p>
+
+                  <label for="email">*Enter your email address:</label>
+                  <p><input type="text" name="email"/></p>
+                   <input type="hidden" value="yourfeedburnerusername" name="uri"/>
+
+                   <input type="submit" value="Submit" />
+               </form>
+               
+               <div id="imgBox">
+               		<h3>Sample pic</h3>
+
+               		<img id="samplePic" src="" width="180" height="160" />
+               		<a href="#">Download Photo</a>
+               		<p id="contactInfo">
+               			If this is not the correct photo, please <a href="mailto:alexmorales30@gmail.com">let us know</a> 
+               		</p>
+               </div>
+
+			<div class="clear">&nbsp;</div>
+             </div>
+             <div class="clear">&nbsp;</div>
+
+          </div>
+
+                   <div class="footer">Disclaimer text goes here</div>
+
+
+       </div>
+
+   </div>
+
+
+</body>
+</html>
+
